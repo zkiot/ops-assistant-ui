@@ -1,0 +1,43 @@
+/* ── 设计令牌 ───────────────────────────────────────────────── */
+:root {
+  --bg-base:        #0d1117;
+  --bg-panel:       #161b22;
+  --bg-card:        #1c2128;
+  --bg-input:       #21262d;
+  --border:         #30363d;
+  --text-primary:   #e6edf3;
+  --text-secondary: #8b949e;
+  --text-muted:     #484f58;
+  --accent:         #00b4d8;
+  --accent-dim:     rgba(0, 180, 216, 0.12);
+  --accent-glow:    rgba(0, 180, 216, 0.25);
+  --green:          #3fb950;
+  --red:            #f85149;
+  --yellow:         #d29922;
+  --radius:         8px;
+  --radius-lg:      12px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body, #app {
+  height: 100%;
+  background: var(--bg-base);
+  color: var(--text-primary);
+  font-family: 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  overflow: hidden;
+}
+
+/* Element Plus 暗色覆盖 */
+.el-button { font-size: 12px; }
+.el-button--small { height: 28px; padding: 0 10px; }
+
+.el-button.is-text {
+  color: var(--text-secondary) !important;
+}
+.el-button.is-text:hover {
+  color: var(--accent) !important;
+  background: var(--accent-dim) !important;
+}
